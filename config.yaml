@@ -1,0 +1,11 @@
+# Central configuration for PDF InsightBot
+chunk_size: 800
+chunk_overlap: 150
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+generator_model: "google/flan-t5-base"
+top_k: 3
+max_output_tokens: 300
+allowed_extensions:
+  - ".pdf"
+max_upload_bytes: 20971520   # 20 MB
+vector_store_path: "vector_store/faiss_index"
